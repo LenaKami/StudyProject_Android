@@ -604,7 +604,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
         String str_origin = "origin=" + origin.latitude + "," + origin.longitude;
         String str_dest = "destination=" + dest.latitude + "," + dest.longitude;
         String mode = "mode=walking";
-        String key = "key=AIzaSyC4KaLnKSYLuF9xCyzudGh8DMCB-6HefJA";
+        String key = "";
         String parameters = str_origin + "&" + str_dest + "&" + mode + "&" + key;
         return "https://maps.googleapis.com/maps/api/directions/json?" + parameters;
     }
@@ -613,7 +613,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
         String str_origin = "origin=" + origin.latitude + "," + origin.longitude;
         String str_dest = "destination=" + dest.latitude + "," + dest.longitude;
         String mode = "travelmode=walking";
-        String key = "key=AIzaSyC4KaLnKSYLuF9xCyzudGh8DMCB-6HefJA";
+        String key = "";
         String parameters = str_origin + "&" + str_dest + "&" + mode;
         return "https://www.google.com/maps/dir/?api=1&" + parameters;
     }
@@ -626,7 +626,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
         String str_origin = "origin=" + encodeLatLng(origin);
         String str_dest = "destination=" + encodeLatLng(dest);
         String mode = "mode=walking";
-        String key = "key=AIzaSyC4KaLnKSYLuF9xCyzudGh8DMCB-6HefJA";
+        String key = "";
 
         String waypoints = "";
         if (waypointsList != null && !waypointsList.isEmpty()) {
